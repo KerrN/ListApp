@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8175.2" systemVersion="15A284" minimumToolsVersion="Automatic">
+    <entity name="BuyItems" representedClassName=".BuyItems" syncable="YES">
+        <attribute name="completed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="itemName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="shoplist" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ShopList" inverseName="buyitems" inverseEntity="ShopList" syncable="YES"/>
+    </entity>
+    <entity name="ShopList" representedClassName=".ShopList" syncable="YES">
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="listname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="store" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="buyitems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BuyItems" inverseName="shoplist" inverseEntity="BuyItems" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BuyItems" positionX="151" positionY="27" width="128" height="88"/>
+        <element name="ShopList" positionX="-63" positionY="-18" width="128" height="103"/>
+    </elements>
+</model>
