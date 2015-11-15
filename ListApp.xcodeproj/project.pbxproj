@@ -100,9 +100,21 @@
 		9B3453011BF8FC1F00FCE722 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				9BB171241BF744DC00FC8104 /* Info.plist */,
 				9BB1711F1BF744DC00FC8104 /* Assets.xcassets */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		9B3453021BF9020C00FCE722 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9BB171151BF744DB00FC8104 /* AppDelegate.swift */,
+				9B3452FE1BF8AC9000FCE722 /* ListDetailVC.swift */,
+				9BB171171BF744DB00FC8104 /* MainVC.swift */,
+				9BB171571BF7482000FC8104 /* TableVC.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		9BB171091BF744DB00FC8104 = {
@@ -128,14 +140,10 @@
 		9BB171141BF744DB00FC8104 /* ListApp */ = {
 			isa = PBXGroup;
 			children = (
+				9B3453021BF9020C00FCE722 /* Controllers */,
 				9B3453011BF8FC1F00FCE722 /* Assets */,
 				9B3453001BF8FC0C00FCE722 /* Views */,
 				9BB1714E1BF7467700FC8104 /* Model */,
-				9BB171151BF744DB00FC8104 /* AppDelegate.swift */,
-				9B3452FE1BF8AC9000FCE722 /* ListDetailVC.swift */,
-				9BB171171BF744DB00FC8104 /* MainVC.swift */,
-				9BB171571BF7482000FC8104 /* TableVC.swift */,
-				9BB171241BF744DC00FC8104 /* Info.plist */,
 			);
 			path = ListApp;
 			sourceTree = "<group>";

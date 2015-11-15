@@ -84,6 +84,8 @@ class TableVC: UITableViewController, NSFetchedResultsControllerDelegate {
         let category  = list.category
         
         cell.detailTextLabel?.text = "Store:\(store) \(category)."
+        //set the colot to the Table View cell
+        cell.backgroundColor = colorForIndex(indexPath.row)
         return cell
     }
     
@@ -153,6 +155,21 @@ class TableVC: UITableViewController, NSFetchedResultsControllerDelegate {
             
         }
         
+    }
+    
+    // MARK: - Table view delegate
+    
+    func colorForIndex(index: Int) -> UIColor {
+
+        let itemCount =  frc.sections?[0].numberOfObjects
+        print(itemCount)
+        let val = (CGFloat(index) / CGFloat(itemCount!)) * 0.7
+        return UIColor(red: 0.9, green: val, blue: 0.0, alpha: 1.0)
+    }
+    
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell,
+        forRowAtIndexPath indexPath: NSIndexPath) {
+            cell.backgroundColor = colorForIndex(indexPath.row)
     }
     
 
