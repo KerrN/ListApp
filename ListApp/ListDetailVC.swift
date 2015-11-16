@@ -17,6 +17,8 @@ class ListDetailVC: UIViewController,UITableViewDataSource , UIPickerViewDelegat
     var frc: NSFetchedResultsController = NSFetchedResultsController()
     var toBuyItem = [NSManagedObject]()
     var checked = [Bool]()
+    
+    var nItem : ShopList? = nil
 
     @IBOutlet weak var detailCancle: UIBarButtonItem!
     @IBOutlet weak var detailTitle: UILabel!
@@ -62,24 +64,30 @@ class ListDetailVC: UIViewController,UITableViewDataSource , UIPickerViewDelegat
     override func viewWillAppear(animated: Bool)
     {
         super.viewWillAppear(animated)
+        //Show the category
+        detailTitle.text = nItem?.category
+        self.title = nItem?.listname
         
-        //1
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        let managedContext = appDelegate.managedObjectContext
+        let shoplistFetchRequest = NSFetchRequest(entityName: "ShopList")
+        let primarySortDescriptor = NSSortDescriptor(key: "listname", ascending: true)
         
-        //2
-        let fetchRequest = NSFetchRequest(entityName:"BuyItems")
+        shoplistFetchRequest.sortDescriptors = [primarySortDescriptor]
         
-        do {
-            let fetchedResults = try managedContext.executeFetchRequest(fetchRequest) as? [NSManagedObject]
-            if let results = fetchedResults {
-                toBuyItem = results
-            } else {
-                print("Could not find any results")
+        let allLists = (try! context.executeFetchRequest(shoplistFetchRequest)) as! [ShopList]
+        var tempToBuyItem = [NSManagedObject]()
+        
+        for list in allLists {
+            print(" \n List Name: \(list.listname) Store: \(list.store)")
+            if list.listname == nItem?.listname {
+                
+                for item in list.buyitems!{
+                    //print(">> \(item.itemName)");
+                    tempToBuyItem.append(item as! BuyItems)
+                }
+                
             }
-        } catch {
-            print("There was an error fetching data from people database")
         }
+        toBuyItem = tempToBuyItem
     }
 
     
@@ -109,16 +117,22 @@ class ListDetailVC: UIViewController,UITableViewDataSource , UIPickerViewDelegat
         // We then fill the attributes of the new device object
         newBuyItem.setValue(detailItemName, forKey: "itemName")
         newBuyItem.setValue(false, forKey: "completed")
-       // newBuyItem.setValue(shoplist[0], forKeyPath: "buyitems.shoplist")
+        
         // Finally we attach the person object to the person relationship key of the device object
-        //newBuyItem.setValue(ShopList.self, forKey: "shoplists")
-
+        let listFetchRequest = NSFetchRequest(entityName: "ShopList")
+        let allShopLists = (try! context.executeFetchRequest(listFetchRequest)) as! [ShopList]
+        let colesShopList = allShopLists.filter({ (sl: ShopList) -> Bool in
+            return sl.listname == nItem?.listname
+        }).first
+        newBuyItem.setValue(NSSet(array: [colesShopList!]), forKeyPath: "shoplist")
+        
+        //Save the context
         do{
             try context.save()
         }catch{
             print("Could not save \(error)")
         }
-        
+        //append the lacal array
         toBuyItem.append(newBuyItem)
     }
     

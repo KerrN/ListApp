@@ -17,6 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //**** Data Helper for storing the dummy data
+        
+        //let dataHelper = DataHelper(context: self.managedObjectContext)
+        //dataHelper.seedDataStore()
+        //dataHelper.printAllLists()
+        //dataHelper.printAllBuyItems()
+
         return true
     }
 

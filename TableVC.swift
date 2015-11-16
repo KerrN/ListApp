@@ -148,7 +148,7 @@ class TableVC: UITableViewController, NSFetchedResultsControllerDelegate {
         if segue.identifier == "edit"{
             let cell  = sender as! UITableViewCell
             let listIndexPath = tableView.indexPathForCell(cell)
-            let itemController : MainVC = segue.destinationViewController as! MainVC
+            let itemController : ListDetailVC = segue.destinationViewController as! ListDetailVC
             let nItem : ShopList = frc.objectAtIndexPath(listIndexPath!) as! ShopList
             
             itemController.nItem = nItem
