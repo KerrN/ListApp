@@ -21,11 +21,11 @@
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="ayp-yf-prv" detailTextLabel="gdg-Gh-sm2" style="IBUITableViewCellStyleSubtitle" id="biu-sk-vj4">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="ayp-yf-prv" detailTextLabel="gdg-Gh-sm2" style="IBUITableViewCellStyleSubtitle" id="biu-sk-vj4">
                                 <rect key="frame" x="0.0" y="137" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="biu-sk-vj4" id="YtM-r9-Kub">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ayp-yf-prv">
@@ -145,7 +145,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Add / Edit List" id="Hu0-Iy-7Xe">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Ets-9I-Qxr">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="Ets-9I-Qxr">
                             <connections>
                                 <action selector="cancelTapped:" destination="BYZ-38-t0r" id="xGi-HH-P1R"/>
                             </connections>
@@ -225,38 +225,38 @@
                                     <constraint firstAttribute="height" constant="343" id="XD8-Wx-OB1"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="checkmark" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="yfH-o5-90T">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="yfH-o5-90T">
                                         <rect key="frame" x="0.0" y="28" width="561" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" tableViewCell="yfH-o5-90T" id="9Kq-5V-YwT">
-                                            <rect key="frame" x="0.0" y="0.0" width="522" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="561" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter items name " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aL0-XH-8kh">
-                                                    <rect key="frame" x="41" y="8" width="205" height="30"/>
+                                                    <rect key="frame" x="63" y="8" width="183" height="30"/>
                                                     <animations/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="205" id="6Gv-1S-MSg"/>
+                                                        <constraint firstAttribute="width" constant="183" id="DbP-g3-vH0"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkedBox.png" translatesAutoresizingMaskIntoConstraints="NO" id="JAd-Jq-jRO">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tick" translatesAutoresizingMaskIntoConstraints="NO" id="JAd-Jq-jRO">
                                                     <rect key="frame" x="0.0" y="0.0" width="43" height="44"/>
                                                     <animations/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="43" id="PhA-dg-CAV"/>
+                                                        <constraint firstAttribute="width" constant="43" id="xgi-uO-sYt"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
                                             <animations/>
                                             <constraints>
-                                                <constraint firstItem="JAd-Jq-jRO" firstAttribute="leading" secondItem="9Kq-5V-YwT" secondAttribute="leading" id="5t3-25-fE6"/>
-                                                <constraint firstItem="aL0-XH-8kh" firstAttribute="top" secondItem="9Kq-5V-YwT" secondAttribute="topMargin" id="7W3-KF-2D5"/>
-                                                <constraint firstItem="JAd-Jq-jRO" firstAttribute="centerY" secondItem="9Kq-5V-YwT" secondAttribute="centerY" id="HJd-kc-JYF"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="aL0-XH-8kh" secondAttribute="bottom" constant="-2.5" id="Pbj-rs-e51"/>
-                                                <constraint firstItem="aL0-XH-8kh" firstAttribute="leading" secondItem="9Kq-5V-YwT" secondAttribute="leadingMargin" constant="33" id="TyB-fA-XZh"/>
-                                                <constraint firstItem="JAd-Jq-jRO" firstAttribute="top" secondItem="9Kq-5V-YwT" secondAttribute="top" id="wIP-il-312"/>
+                                                <constraint firstItem="JAd-Jq-jRO" firstAttribute="leading" secondItem="9Kq-5V-YwT" secondAttribute="leading" id="1WP-Z8-lam"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="aL0-XH-8kh" secondAttribute="bottom" constant="-2.5" id="Fy0-dv-XyB"/>
+                                                <constraint firstItem="JAd-Jq-jRO" firstAttribute="top" secondItem="9Kq-5V-YwT" secondAttribute="top" id="Uze-yg-KGN"/>
+                                                <constraint firstItem="aL0-XH-8kh" firstAttribute="leading" secondItem="JAd-Jq-jRO" secondAttribute="trailing" constant="20" id="e8b-zv-R9M"/>
+                                                <constraint firstItem="aL0-XH-8kh" firstAttribute="top" secondItem="9Kq-5V-YwT" secondAttribute="topMargin" id="isr-zd-Qez"/>
+                                                <constraint firstItem="JAd-Jq-jRO" firstAttribute="centerY" secondItem="9Kq-5V-YwT" secondAttribute="centerY" id="lgA-2A-OY2"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
@@ -317,7 +317,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="DetailView" id="UBm-Ua-I2f">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="vxX-3g-Ajc">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="vxX-3g-Ajc">
                             <connections>
                                 <action selector="cancleDetailView:" destination="Df4-fb-fFZ" id="FFw-QM-N93"/>
                             </connections>
@@ -335,6 +335,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="checkedBox.png" width="363" height="645"/>
+        <image name="Tick" width="92" height="48"/>
     </resources>
 </document>
