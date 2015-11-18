@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9B3452FF1BF8AC9000FCE722 /* ListDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3452FE1BF8AC9000FCE722 /* ListDetailVC.swift */; };
+		9B71ED941BFCAD7900DE4DFB /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B71ED931BFCAD7900DE4DFB /* GoogleMobileAds.framework */; };
 		9B8B39171BF9FA7200FDC1E6 /* DataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8B39161BF9FA7200FDC1E6 /* DataHelper.swift */; };
 		9B8B39241BFA1FC800FDC1E6 /* ShopList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8B39201BFA1FC800FDC1E6 /* ShopList+CoreDataProperties.swift */; };
 		9B8B39251BFA1FC800FDC1E6 /* ShopList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8B39211BFA1FC800FDC1E6 /* ShopList.swift */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		9B3452FE1BF8AC9000FCE722 /* ListDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDetailVC.swift; sourceTree = "<group>"; };
+		9B71ED931BFCAD7900DE4DFB /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = ../GoogleMobileAds.framework; sourceTree = "<group>"; };
 		9B8B39161BF9FA7200FDC1E6 /* DataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataHelper.swift; sourceTree = "<group>"; };
 		9B8B39201BFA1FC800FDC1E6 /* ShopList+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShopList+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9B8B39211BFA1FC800FDC1E6 /* ShopList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopList.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B71ED941BFCAD7900DE4DFB /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +123,14 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		9B71ED951BFCB3B600DE4DFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B71ED931BFCAD7900DE4DFB /* GoogleMobileAds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9B8B39291BFA2C8100FDC1E6 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +162,7 @@
 		9BB171141BF744DB00FC8104 /* ListApp */ = {
 			isa = PBXGroup;
 			children = (
+				9B71ED951BFCB3B600DE4DFB /* Frameworks */,
 				9B8B39291BFA2C8100FDC1E6 /* Helper */,
 				9B3453021BF9020C00FCE722 /* Controllers */,
 				9B3453011BF8FC1F00FCE722 /* Assets */,
@@ -471,9 +483,19 @@
 		9BB1713E1BF744DC00FC8104 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(inherited)";
 				INFOPLIST_FILE = ListApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleMobileAds.framework/Versions/A",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = SB.ListApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -482,9 +504,19 @@
 		9BB1713F1BF744DC00FC8104 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(inherited)";
 				INFOPLIST_FILE = ListApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleMobileAds.framework/Versions/A",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = SB.ListApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -493,7 +525,12 @@
 		9BB171411BF744DC00FC8104 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ListAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SB.ListAppTests;
@@ -505,7 +542,12 @@
 		9BB171421BF744DC00FC8104 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ListAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SB.ListAppTests;

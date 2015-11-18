@@ -8,8 +8,12 @@
 
 import UIKit
 import CoreData
+import GoogleMobileAds
 
 class TableVC: UITableViewController, NSFetchedResultsControllerDelegate {
+    
+    
+    @IBOutlet weak var admobBanner: GADBannerView!
     
     let context : NSManagedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
 
@@ -35,6 +39,15 @@ class TableVC: UITableViewController, NSFetchedResultsControllerDelegate {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        //Display mobile ads here
+        admobBanner.adUnitID = "ca-app-pub-3000953524335319/6882684788"
+        admobBanner.rootViewController = self
+        self.view.addSubview(admobBanner)
+        let adRequest: GADRequest = GADRequest()
+        adRequest.testDevices = [""]
+        admobBanner.loadRequest(adRequest)
+        
+        
         
         frc = getFechedResultsController()
         frc.delegate = self
