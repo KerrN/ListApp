@@ -14,7 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    var centerContainer:MMDrawerController?
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -24,6 +25,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //dataHelper.seedDataStore()
         //dataHelper.printAllLists()
         //dataHelper.printAllBuyItems()
+        
+        //****** MMDrawerController
+        
+        var rootViewController = self.window!.rootViewController
+        
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        var centerViewController = mainStoryboard.instantiateViewControllerWithIdentifier("TableVC") as! TableVC
+        var menuViewController = mainStoryboard.instantiateViewControllerWithIdentifier("MenuVC") as! MenuVC
+        
+        var menuNav = UINavigationController(rootViewController: menuViewController)
+        var centerNav = UINavigationController(rootViewController: centerViewController)
+        
+        centerContainer = MMDrawerController(centerViewController: centerNav, leftDrawerViewController: menuNav)
+        
+        centerContainer!.openDrawerGestureModeMask = MMOpenDrawerGestureMode.PanningCenterView;
+        centerContainer!.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.PanningCenterView;
+        centerContainer!.maximumLeftDrawerWidth = 130
+        
+        window!.rootViewController = centerContainer
+        window!.makeKeyAndVisible()
 
         return true
     }

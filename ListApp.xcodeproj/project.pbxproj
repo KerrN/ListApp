@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		9B3452FF1BF8AC9000FCE722 /* ListDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3452FE1BF8AC9000FCE722 /* ListDetailVC.swift */; };
 		9B71ED941BFCAD7900DE4DFB /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B71ED931BFCAD7900DE4DFB /* GoogleMobileAds.framework */; };
+		9B71ED971BFD8DF500DE4DFB /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B71ED961BFD8DF500DE4DFB /* MenuVC.swift */; };
+		9B71EDA31BFD905A00DE4DFB /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B71ED9B1BFD905A00DE4DFB /* MMDrawerBarButtonItem.m */; };
+		9B71EDA41BFD905A00DE4DFB /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B71ED9D1BFD905A00DE4DFB /* MMDrawerController.m */; };
+		9B71EDA51BFD905A00DE4DFB /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B71EDA01BFD905A00DE4DFB /* MMDrawerVisualState.m */; };
+		9B71EDA61BFD905A00DE4DFB /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B71EDA21BFD905A00DE4DFB /* UIViewController+MMDrawerController.m */; };
+		9B71EDA81BFDADB700DE4DFB /* menuCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B71EDA71BFDADB700DE4DFB /* menuCustomTableViewCell.swift */; };
+		9B71EDAA1BFDC0DE00DE4DFB /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B71EDA91BFDC0DE00DE4DFB /* AboutVC.swift */; };
+		9B71EDAC1BFDC38800DE4DFB /* PrivacyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B71EDAB1BFDC38800DE4DFB /* PrivacyVC.swift */; };
 		9B8B39171BF9FA7200FDC1E6 /* DataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8B39161BF9FA7200FDC1E6 /* DataHelper.swift */; };
 		9B8B39241BFA1FC800FDC1E6 /* ShopList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8B39201BFA1FC800FDC1E6 /* ShopList+CoreDataProperties.swift */; };
 		9B8B39251BFA1FC800FDC1E6 /* ShopList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8B39211BFA1FC800FDC1E6 /* ShopList.swift */; };
@@ -45,6 +53,20 @@
 /* Begin PBXFileReference section */
 		9B3452FE1BF8AC9000FCE722 /* ListDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDetailVC.swift; sourceTree = "<group>"; };
 		9B71ED931BFCAD7900DE4DFB /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = ../GoogleMobileAds.framework; sourceTree = "<group>"; };
+		9B71ED961BFD8DF500DE4DFB /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		9B71ED991BFD905900DE4DFB /* ListApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ListApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		9B71ED9A1BFD905A00DE4DFB /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		9B71ED9B1BFD905A00DE4DFB /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		9B71ED9C1BFD905A00DE4DFB /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		9B71ED9D1BFD905A00DE4DFB /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		9B71ED9E1BFD905A00DE4DFB /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		9B71ED9F1BFD905A00DE4DFB /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		9B71EDA01BFD905A00DE4DFB /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		9B71EDA11BFD905A00DE4DFB /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		9B71EDA21BFD905A00DE4DFB /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		9B71EDA71BFDADB700DE4DFB /* menuCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuCustomTableViewCell.swift; sourceTree = "<group>"; };
+		9B71EDA91BFDC0DE00DE4DFB /* AboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		9B71EDAB1BFDC38800DE4DFB /* PrivacyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyVC.swift; sourceTree = "<group>"; };
 		9B8B39161BF9FA7200FDC1E6 /* DataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataHelper.swift; sourceTree = "<group>"; };
 		9B8B39201BFA1FC800FDC1E6 /* ShopList+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShopList+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9B8B39211BFA1FC800FDC1E6 /* ShopList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopList.swift; sourceTree = "<group>"; };
@@ -115,6 +137,10 @@
 		9B3453021BF9020C00FCE722 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9B71EDAB1BFDC38800DE4DFB /* PrivacyVC.swift */,
+				9B71EDA91BFDC0DE00DE4DFB /* AboutVC.swift */,
+				9B71EDA71BFDADB700DE4DFB /* menuCustomTableViewCell.swift */,
+				9B71ED961BFD8DF500DE4DFB /* MenuVC.swift */,
 				9BB171151BF744DB00FC8104 /* AppDelegate.swift */,
 				9B3452FE1BF8AC9000FCE722 /* ListDetailVC.swift */,
 				9BB171171BF744DB00FC8104 /* MainVC.swift */,
@@ -129,6 +155,23 @@
 				9B71ED931BFCAD7900DE4DFB /* GoogleMobileAds.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B71ED981BFD8F9E00DE4DFB /* MenuView */ = {
+			isa = PBXGroup;
+			children = (
+				9B71ED9A1BFD905A00DE4DFB /* MMDrawerBarButtonItem.h */,
+				9B71ED9B1BFD905A00DE4DFB /* MMDrawerBarButtonItem.m */,
+				9B71ED9C1BFD905A00DE4DFB /* MMDrawerController.h */,
+				9B71ED9D1BFD905A00DE4DFB /* MMDrawerController.m */,
+				9B71ED9E1BFD905A00DE4DFB /* MMDrawerController+Subclass.h */,
+				9B71ED9F1BFD905A00DE4DFB /* MMDrawerVisualState.h */,
+				9B71EDA01BFD905A00DE4DFB /* MMDrawerVisualState.m */,
+				9B71EDA11BFD905A00DE4DFB /* UIViewController+MMDrawerController.h */,
+				9B71EDA21BFD905A00DE4DFB /* UIViewController+MMDrawerController.m */,
+				9B71ED991BFD905900DE4DFB /* ListApp-Bridging-Header.h */,
+			);
+			name = MenuView;
 			sourceTree = "<group>";
 		};
 		9B8B39291BFA2C8100FDC1E6 /* Helper */ = {
@@ -162,6 +205,7 @@
 		9BB171141BF744DB00FC8104 /* ListApp */ = {
 			isa = PBXGroup;
 			children = (
+				9B71ED981BFD8F9E00DE4DFB /* MenuView */,
 				9B71ED951BFCB3B600DE4DFB /* Frameworks */,
 				9B8B39291BFA2C8100FDC1E6 /* Helper */,
 				9B3453021BF9020C00FCE722 /* Controllers */,
@@ -264,6 +308,7 @@
 		9BB1710A1BF744DB00FC8104 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = BAPAT;
 				TargetAttributes = {
@@ -336,12 +381,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BB1711E1BF744DB00FC8104 /* ListApp.xcdatamodeld in Sources */,
+				9B71EDA31BFD905A00DE4DFB /* MMDrawerBarButtonItem.m in Sources */,
 				9BB171581BF7482000FC8104 /* TableVC.swift in Sources */,
+				9B71EDA61BFD905A00DE4DFB /* UIViewController+MMDrawerController.m in Sources */,
 				9B8B39241BFA1FC800FDC1E6 /* ShopList+CoreDataProperties.swift in Sources */,
 				9BB171181BF744DB00FC8104 /* MainVC.swift in Sources */,
+				9B71EDA41BFD905A00DE4DFB /* MMDrawerController.m in Sources */,
+				9B71EDAC1BFDC38800DE4DFB /* PrivacyVC.swift in Sources */,
+				9B71EDA51BFD905A00DE4DFB /* MMDrawerVisualState.m in Sources */,
 				9BB171161BF744DB00FC8104 /* AppDelegate.swift in Sources */,
 				9B3452FF1BF8AC9000FCE722 /* ListDetailVC.swift in Sources */,
+				9B71ED971BFD8DF500DE4DFB /* MenuVC.swift in Sources */,
+				9B71EDA81BFDADB700DE4DFB /* menuCustomTableViewCell.swift in Sources */,
 				9B8B39171BF9FA7200FDC1E6 /* DataHelper.swift in Sources */,
+				9B71EDAA1BFDC0DE00DE4DFB /* AboutVC.swift in Sources */,
 				9B8B39271BFA1FC800FDC1E6 /* BuyItems.swift in Sources */,
 				9B8B39251BFA1FC800FDC1E6 /* ShopList.swift in Sources */,
 				9B8B39261BFA1FC800FDC1E6 /* BuyItems+CoreDataProperties.swift in Sources */,
@@ -485,6 +538,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -498,6 +552,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = SB.ListApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ListApp/ListApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -506,6 +562,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -519,6 +576,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = SB.ListApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ListApp/ListApp-Bridging-Header.h";
 			};
 			name = Release;
 		};

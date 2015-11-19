@@ -250,7 +250,7 @@ class ListDetailVC: UIViewController,UITableViewDataSource , UIPickerViewDelegat
     @IBAction func cancleDetailView(sender: UIBarButtonItem) {
         
         dismissVC()
-        print("cancel")
+       // print("cancel")
     }
     
     func dismissVC (){
