@@ -14,6 +14,7 @@ class mapViewController: UIViewController, CLLocationManagerDelegate{
 
     var manager:CLLocationManager!
 
+    @IBOutlet var addressLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +34,9 @@ class mapViewController: UIViewController, CLLocationManagerDelegate{
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
         print(locations)
+        let userLocation:CLLocation = locations[0]
+
+       addressLabel.text =  "\(userLocation.coordinate.latitude) + \(   userLocation.coordinate.longitude)"
         
     }
 
