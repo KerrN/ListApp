@@ -97,7 +97,6 @@ class ListDetailVC: UIViewController,UITableViewDataSource , UIPickerViewDelegat
         var detailName: String
         detailName = txtItem.text!
         
-        //toByItm.addDetailItem(detailTitle.text!, detailItemName: txtItem.text!, detailItemCompleted: false)
         if detailName != "" {
         saveItem(detailName)
         txtItem.text = ""
@@ -178,7 +177,7 @@ class ListDetailVC: UIViewController,UITableViewDataSource , UIPickerViewDelegat
         if completed == false{
             cell.textLabel!.text = cell.textLabel!.text!
         }else {// check is true
-            cell.textLabel!.text = "\u{2705}" + cell.textLabel!.text!
+            cell.textLabel!.text = "\u{2611}" + cell.textLabel!.text!
         }
         return cell
     }
@@ -224,7 +223,7 @@ class ListDetailVC: UIViewController,UITableViewDataSource , UIPickerViewDelegat
             
             if  completed == false
             {
-                cell.textLabel!.text =   "\u{2705}" + cell.textLabel!.text!
+                cell.textLabel!.text =   "\u{2611}" + cell.textLabel!.text!
                 buyingItem.setValue(true, forKey: "completed")
                 print (buyingItem.valueForKey("completed"))
             }
