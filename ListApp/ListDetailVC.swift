@@ -77,7 +77,7 @@ class ListDetailVC: UIViewController,UITableViewDataSource , UIPickerViewDelegat
         var tempToBuyItem = [NSManagedObject]()
         
         for list in allLists {
-            print(" \n List Name: \(list.listname) Store: \(list.store)")
+           // print(" \n List Name: \(list.listname) Store: \(list.store)")
             if list.listname == nItem?.listname {
                 
                 for item in list.buyitems!{

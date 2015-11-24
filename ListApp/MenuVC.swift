@@ -10,7 +10,7 @@ import UIKit
 
 class MenuVC: UIViewController, UITableViewDataSource, UITableViewDelegate{
 
-    var menuItems:[String] = ["Main","About","Privacy Policy"];
+    var menuItems:[String] = ["About","All","Work","Personal","Today's Reminders","Privacy Policy"];
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -31,6 +31,9 @@ class reminderViewController: UIViewController {
         
         appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate
         
+        
+        
+        
         if appDelegate!.eventStore == nil {
             appDelegate!.eventStore = EKEventStore()
             appDelegate!.eventStore!.requestAccessToEntityType(EKEntityType.Reminder, completion:
@@ -75,9 +78,13 @@ class reminderViewController: UIViewController {
         reminder.title = reminderText.text!
         reminder.calendar = eventStore.defaultCalendarForNewReminders()
         let date = myDatePicker.date
+        
+        
         let alarm = EKAlarm(absoluteDate: date)
         
         reminder.addAlarm(alarm)
+        
+        print(alarm)
         
         try eventStore.saveReminder(reminder, commit: true)
 

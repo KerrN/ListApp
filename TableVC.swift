@@ -111,7 +111,8 @@ class TableVC: UITableViewController, NSFetchedResultsControllerDelegate {
         let store  = list.store
         let category  = list.category
         
-        cell.detailTextLabel?.text = "Store:\(store) \(category)."
+        cell.detailTextLabel?.text = "Store: \(store) \(category)."
+        
         //set the colot to the Table View cell
         cell.backgroundColor = colorForIndex(indexPath.row)
         return cell
