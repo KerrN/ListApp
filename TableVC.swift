@@ -140,13 +140,23 @@ class TableVC: UITableViewController, NSFetchedResultsControllerDelegate {
         
 
         // Configure the cell...
-        cell.textLabel?.text = list.listname
+        cell.textLabel!.text = list.listname
         
         let store  = list.store
         let category  = list.category
-        
-        cell.detailTextLabel?.text = "Store: \(store) \(category)."
-        
+       
+        if( store != nil)
+        {
+            if(category != nil)
+            {
+                cell.detailTextLabel!.text = "Store : " + list.store! + "  Category : " + category! //"\(store)x\(category)"
+            }
+            cell.detailTextLabel!.text = "Store : " + list.store! + "  Category :  "
+        }
+        else if (category != nil)
+        {
+            cell.detailTextLabel!.text = "Store : " + "  Category : " + category!
+        }
         //set the colot to the Table View cell
         cell.backgroundColor = colorForIndex(indexPath.row)
         return cell
