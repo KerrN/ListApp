@@ -10,11 +10,13 @@ import UIKit
 
 class MenuVC: UIViewController, UITableViewDataSource, UITableViewDelegate{
 
-    var menuItems:[String] = ["About","All","Work","Personal","Today's Reminders","Privacy Policy"];
+    var menuItems:[String] = ["All","Personal","Work","Privacy Policy","About"];
+    var lastSelectedIndexPath: NSIndexPath?
+    var categorySelection:String?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -34,59 +36,82 @@ class MenuVC: UIViewController, UITableViewDataSource, UITableViewDelegate{
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let mycell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath) as! menuCustomTableViewCell
+
+        mycell.accessoryType = .None
         mycell.menuItemLabel.text = menuItems[indexPath.row]
+        lastSelectedIndexPath = indexPath
         return mycell
         
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
-        switch(indexPath.row){
-        case 0://Main
+        
+        categorySelection = menuItems[indexPath.row]
+        switch(indexPath.row)
+        {
+    
+            case 4://About
             
-            let centerViewController = self.storyboard?.instantiateViewControllerWithIdentifier("TableVC") as! TableVC
-            let centerNavController = UINavigationController(rootViewController: centerViewController)
-            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                let aboutViewController = self.storyboard?.instantiateViewControllerWithIdentifier("AboutVC") as! AboutVC
+                let aboutNavController = UINavigationController(rootViewController: aboutViewController)
+                let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
             
-            appDelegate.centerContainer!.centerViewController = centerNavController
-            appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
-            break;
-            
-        case 1://About
-            
-            let aboutViewController = self.storyboard?.instantiateViewControllerWithIdentifier("AboutVC") as! AboutVC
-            let aboutNavController = UINavigationController(rootViewController: aboutViewController)
-            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-            
-            appDelegate.centerContainer!.centerViewController = aboutNavController
-            appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+                appDelegate.centerContainer!.centerViewController = aboutNavController
+                appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
             break;
         
-        case 2://Privacy
+            case 3://Privacy
             
-            let privacyViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PrivacyVC") as! PrivacyVC
-            let privacyNavController = UINavigationController(rootViewController: privacyViewController)
-            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                let privacyViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PrivacyVC") as! PrivacyVC
+                let privacyNavController = UINavigationController(rootViewController: privacyViewController)
+                let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
             
-            appDelegate.centerContainer!.centerViewController = privacyNavController
-            appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+                appDelegate.centerContainer!.centerViewController = privacyNavController
+                appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+                
             break;
-        default:
-            //  print("\(menuItems[indexPath.row]) is selected);
+            
+            default:
+                if indexPath.row != lastSelectedIndexPath!.row
+                {
+                    let oldCell = tableView.cellForRowAtIndexPath(self.lastSelectedIndexPath!)
+                    oldCell?.accessoryType = .None
+                
+                    let newCell = tableView.cellForRowAtIndexPath(indexPath)
+                    newCell?.accessoryType = .Checkmark
+                    
+                    lastSelectedIndexPath = indexPath
+                }
+                let mainViewController = self.storyboard?.instantiateViewControllerWithIdentifier("TableVC") as! TableVC
+                let mainNavController = UINavigationController(rootViewController: mainViewController)
+                let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                
+                appDelegate.centerContainer!.centerViewController = mainNavController
+                appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+
+//                let svc = segue.destinationViewController as! TableVC;
+                mainViewController.toPass = self.categorySelection
+                //let mycell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath) as! menuCustomTableViewCell
+                
             break;
-          
-            
-            
         
         }
     }
-    /*
+   
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+       // if (segue.identifier == "segueTest")
+      //  {
+                let svc = segue.destinationViewController as! TableVC;
+                svc.toPass = self.categorySelection
+                
+        //}
     }
-    */
 
 }

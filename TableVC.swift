@@ -12,6 +12,7 @@ import GoogleMobileAds
 
 class TableVC: UITableViewController, NSFetchedResultsControllerDelegate {
     
+    var toPass:String!
     
     @IBAction func menuButton(sender: AnyObject) {
         
@@ -33,6 +34,17 @@ class TableVC: UITableViewController, NSFetchedResultsControllerDelegate {
 
         let fetchRequest = NSFetchRequest(entityName: "ShopList")
         
+        // Create a new predicate that filters out any object that
+        // doesn't have a title of "Best Language" exactly.
+        print(toPass)
+        if (toPass != "All")
+        {
+            let predicate = NSPredicate(format: "category == %@",toPass)
+        
+            // Set the predicate on the fetch request
+            fetchRequest.predicate = predicate
+        }
+        
         let sortDescriptor = NSSortDescriptor(key:"listname",ascending:true)
         fetchRequest.sortDescriptors = [sortDescriptor]
         return fetchRequest
@@ -40,6 +52,10 @@ class TableVC: UITableViewController, NSFetchedResultsControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if toPass == nil
+        {
+            toPass = "All"
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -70,9 +86,27 @@ class TableVC: UITableViewController, NSFetchedResultsControllerDelegate {
        // self.navigationController!.navigationBarHidden = false;
         //self.navigationController?.setNavigationBarHidden(false, animated: true)
         navigationController?.setNavigationBarHidden(navigationController?.navigationBarHidden == true, animated: true)
+        frc = getFechedResultsController()
+        frc.delegate = self
+        
+        do {
+            try frc.performFetch()
+        } catch _ {
+            // Handle error stored in *error* here
+        }
     }
     override func viewDidAppear(animated: Bool) {
         navigationController?.setNavigationBarHidden(navigationController?.navigationBarHidden == true, animated: true)
+        frc = getFechedResultsController()
+        frc.delegate = self
+        
+        do {
+            try frc.performFetch()
+        } catch _ {
+            // Handle error stored in *error* here
+        }
+        tableView.reloadData()
+
     }
 
     override func didReceiveMemoryWarning() {

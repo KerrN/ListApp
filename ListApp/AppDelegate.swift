@@ -31,15 +31,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //****** MMDrawerController
         
-        var rootViewController = self.window!.rootViewController
+        _ = self.window!.rootViewController
         
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
-        var centerViewController = mainStoryboard.instantiateViewControllerWithIdentifier("TableVC") as! TableVC
-        var menuViewController = mainStoryboard.instantiateViewControllerWithIdentifier("MenuVC") as! MenuVC
+        let centerViewController = mainStoryboard.instantiateViewControllerWithIdentifier("TableVC") as! TableVC
+        let menuViewController = mainStoryboard.instantiateViewControllerWithIdentifier("MenuVC") as! MenuVC
         
-        var menuNav = UINavigationController(rootViewController: menuViewController)
-        var centerNav = UINavigationController(rootViewController: centerViewController)
+        let menuNav = UINavigationController(rootViewController: menuViewController)
+        let centerNav = UINavigationController(rootViewController: centerViewController)
         
         centerContainer = MMDrawerController(centerViewController: centerNav, leftDrawerViewController: menuNav)
         
