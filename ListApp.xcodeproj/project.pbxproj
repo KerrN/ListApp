@@ -31,6 +31,7 @@
 		9BB1712E1BF744DC00FC8104 /* ListAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB1712D1BF744DC00FC8104 /* ListAppTests.swift */; };
 		9BB171391BF744DC00FC8104 /* ListAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB171381BF744DC00FC8104 /* ListAppUITests.swift */; };
 		9BB171581BF7482000FC8104 /* TableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB171571BF7482000FC8104 /* TableVC.swift */; };
+		F917E1451C0515A400F3B99B /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F917E1441C0515A400F3B99B /* iAd.framework */; };
 		F9BCB1C81C01749500F1675F /* reminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BCB1C71C01749500F1675F /* reminderViewController.swift */; };
 		F9BCB1CA1C01F0E500F1675F /* LocationReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BCB1C91C01F0E500F1675F /* LocationReminderViewController.swift */; };
 /* End PBXBuildFile section */
@@ -90,6 +91,7 @@
 		9BB171381BF744DC00FC8104 /* ListAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAppUITests.swift; sourceTree = "<group>"; };
 		9BB1713A1BF744DC00FC8104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BB171571BF7482000FC8104 /* TableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableVC.swift; path = ../TableVC.swift; sourceTree = "<group>"; };
+		F917E1441C0515A400F3B99B /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		F9BCB1C71C01749500F1675F /* reminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = reminderViewController.swift; path = ../reminderViewController.swift; sourceTree = "<group>"; };
 		F9BCB1C91C01F0E500F1675F /* LocationReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationReminderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F917E1451C0515A400F3B99B /* iAd.framework in Frameworks */,
 				9B71ED941BFCAD7900DE4DFB /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,6 +161,7 @@
 		9B71ED951BFCB3B600DE4DFB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F917E1441C0515A400F3B99B /* iAd.framework */,
 				9B71ED931BFCAD7900DE4DFB /* GoogleMobileAds.framework */,
 			);
 			name = Frameworks;

@@ -47,7 +47,8 @@ class ListDetailVC: UIViewController,UITableViewDataSource , UIPickerViewDelegat
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.canDisplayBannerAds = true
+
         frc = getFechedResultsController()
         frc.delegate = self
         

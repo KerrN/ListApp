@@ -7,6 +7,7 @@
 
 import UIKit
 import EventKit
+import iAd
 
 class reminderViewController: UIViewController {
 
@@ -17,8 +18,8 @@ class reminderViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         reminderText.text = selectedList
+        self.canDisplayBannerAds = true
 
-        // Do any additional setup after loading the view.
     }
 
     

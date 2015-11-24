@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Hr5-N8-REh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Hr5-N8-REh">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -382,11 +382,6 @@
                                     <outlet property="delegate" destination="Df4-fb-fFZ" id="vTk-Ry-9fK"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vaf-YM-IXf">
-                                <rect key="frame" x="0.0" y="518" width="40" height="50"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B81-6Z-anQ">
                                 <rect key="frame" x="16" y="124" width="68" height="18"/>
                                 <animations/>
@@ -412,14 +407,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="B81-6Z-anQ" firstAttribute="top" secondItem="GRf-F5-oth" secondAttribute="bottom" constant="22" id="3xD-yw-WHH"/>
-                            <constraint firstItem="Vaf-YM-IXf" firstAttribute="bottom" secondItem="JnV-5J-Uz4" secondAttribute="top" id="4TA-NP-Tg4"/>
-                            <constraint firstItem="Vaf-YM-IXf" firstAttribute="top" secondItem="vp2-LG-FEi" secondAttribute="bottom" constant="8" symbolic="YES" id="52A-Qu-bZZ"/>
                             <constraint firstItem="B81-6Z-anQ" firstAttribute="leading" secondItem="OsD-GI-kj1" secondAttribute="leadingMargin" id="79T-At-Wl4"/>
                             <constraint firstItem="vp2-LG-FEi" firstAttribute="top" secondItem="B81-6Z-anQ" secondAttribute="bottom" constant="25" id="GGZ-dN-PfS"/>
-                            <constraint firstAttribute="trailing" secondItem="Vaf-YM-IXf" secondAttribute="trailing" constant="280" id="NNd-IU-VP9"/>
                             <constraint firstItem="vp2-LG-FEi" firstAttribute="leading" secondItem="OsD-GI-kj1" secondAttribute="leadingMargin" constant="-2" id="Njf-SF-bha"/>
                             <constraint firstItem="PbS-J3-GyZ" firstAttribute="baseline" secondItem="GRf-F5-oth" secondAttribute="baseline" id="UWa-BI-9nM"/>
-                            <constraint firstItem="Vaf-YM-IXf" firstAttribute="leading" secondItem="OsD-GI-kj1" secondAttribute="leading" id="WPY-k4-Guu"/>
                             <constraint firstItem="vp2-LG-FEi" firstAttribute="trailing" secondItem="PbS-J3-GyZ" secondAttribute="trailing" id="avz-6b-lrh"/>
                             <constraint firstItem="oaQ-ZC-DLG" firstAttribute="leading" secondItem="B81-6Z-anQ" secondAttribute="trailing" constant="18" id="er7-9V-8jC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="PbS-J3-GyZ" secondAttribute="trailing" constant="1" id="geJ-2u-alb"/>
