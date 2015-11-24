@@ -54,7 +54,7 @@ class TableVC: UITableViewController, NSFetchedResultsControllerDelegate {
         admobBanner.loadRequest(adRequest)
         //self.navigationController?.navigationBarHidden = true;
         
-        //navigationController?.setNavigationBarHidden(navigationController?.navigationBarHidden == true, animated: true)
+        navigationController?.setNavigationBarHidden(navigationController?.navigationBarHidden == true, animated: true)
         
         frc = getFechedResultsController()
         frc.delegate = self
@@ -178,6 +178,7 @@ class TableVC: UITableViewController, NSFetchedResultsControllerDelegate {
             let listIndexPath = tableView.indexPathForCell(cell)
             let itemController : ListDetailVC = segue.destinationViewController as! ListDetailVC
             let nItem : ShopList = frc.objectAtIndexPath(listIndexPath!) as! ShopList
+            
             itemController.nItem = nItem
             
         }
@@ -185,7 +186,7 @@ class TableVC: UITableViewController, NSFetchedResultsControllerDelegate {
     }
     
     override func unwindForSegue(unwindSegue: UIStoryboardSegue, towardsViewController subsequentVC: UIViewController) {
-        if unwindSegue.identifier == "back" {
+        if unwindSegue.identifier == "back"{
         
         navigationController?.setNavigationBarHidden(navigationController?.navigationBarHidden == true, animated: true)
         }

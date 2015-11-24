@@ -8,11 +8,14 @@
 
 import UIKit
 import CoreData
+import EventKit
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var eventStore: EKEventStore?
 
     var centerContainer:MMDrawerController?
     
@@ -28,15 +31,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //****** MMDrawerController
         
-        _ = self.window!.rootViewController
+        var rootViewController = self.window!.rootViewController
         
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let centerViewController = mainStoryboard.instantiateViewControllerWithIdentifier("TableVC") as! TableVC
-        let menuViewController = mainStoryboard.instantiateViewControllerWithIdentifier("MenuVC") as! MenuVC
+        var centerViewController = mainStoryboard.instantiateViewControllerWithIdentifier("TableVC") as! TableVC
+        var menuViewController = mainStoryboard.instantiateViewControllerWithIdentifier("MenuVC") as! MenuVC
         
-        let menuNav = UINavigationController(rootViewController: menuViewController)
-        let centerNav = UINavigationController(rootViewController: centerViewController)
+        var menuNav = UINavigationController(rootViewController: menuViewController)
+        var centerNav = UINavigationController(rootViewController: centerViewController)
         
         centerContainer = MMDrawerController(centerViewController: centerNav, leftDrawerViewController: menuNav)
         
