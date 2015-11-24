@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		9B3452FF1BF8AC9000FCE722 /* ListDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3452FE1BF8AC9000FCE722 /* ListDetailVC.swift */; };
+		9B71ED941BFCAD7900DE4DFB /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B71ED931BFCAD7900DE4DFB /* GoogleMobileAds.framework */; };
+		9B71ED971BFD8DF500DE4DFB /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B71ED961BFD8DF500DE4DFB /* MenuVC.swift */; };
+		9B71EDA31BFD905A00DE4DFB /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B71ED9B1BFD905A00DE4DFB /* MMDrawerBarButtonItem.m */; };
+		9B71EDA41BFD905A00DE4DFB /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B71ED9D1BFD905A00DE4DFB /* MMDrawerController.m */; };
+		9B71EDA51BFD905A00DE4DFB /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B71EDA01BFD905A00DE4DFB /* MMDrawerVisualState.m */; };
+		9B71EDA61BFD905A00DE4DFB /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B71EDA21BFD905A00DE4DFB /* UIViewController+MMDrawerController.m */; };
+		9B71EDA81BFDADB700DE4DFB /* menuCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B71EDA71BFDADB700DE4DFB /* menuCustomTableViewCell.swift */; };
+		9B71EDAA1BFDC0DE00DE4DFB /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B71EDA91BFDC0DE00DE4DFB /* AboutVC.swift */; };
+		9B71EDAC1BFDC38800DE4DFB /* PrivacyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B71EDAB1BFDC38800DE4DFB /* PrivacyVC.swift */; };
 		9B8B39171BF9FA7200FDC1E6 /* DataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8B39161BF9FA7200FDC1E6 /* DataHelper.swift */; };
 		9B8B39241BFA1FC800FDC1E6 /* ShopList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8B39201BFA1FC800FDC1E6 /* ShopList+CoreDataProperties.swift */; };
 		9B8B39251BFA1FC800FDC1E6 /* ShopList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8B39211BFA1FC800FDC1E6 /* ShopList.swift */; };
@@ -22,9 +31,8 @@
 		9BB1712E1BF744DC00FC8104 /* ListAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB1712D1BF744DC00FC8104 /* ListAppTests.swift */; };
 		9BB171391BF744DC00FC8104 /* ListAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB171381BF744DC00FC8104 /* ListAppUITests.swift */; };
 		9BB171581BF7482000FC8104 /* TableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB171571BF7482000FC8104 /* TableVC.swift */; };
-		F9C7C6B61BFD634D00FCCB5E /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C7C6B51BFD634D00FCCB5E /* mapViewController.swift */; };
-		F9C7C6B81BFD64CA00FCCB5E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9C7C6B71BFD64CA00FCCB5E /* CoreLocation.framework */; };
-		F9C7C6BC1BFD67E200FCCB5E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9C7C6BB1BFD67E200FCCB5E /* MapKit.framework */; };
+		F9BCB1C81C01749500F1675F /* reminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BCB1C71C01749500F1675F /* reminderViewController.swift */; };
+		F9BCB1CA1C01F0E500F1675F /* LocationReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BCB1C91C01F0E500F1675F /* LocationReminderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +54,21 @@
 
 /* Begin PBXFileReference section */
 		9B3452FE1BF8AC9000FCE722 /* ListDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDetailVC.swift; sourceTree = "<group>"; };
+		9B71ED931BFCAD7900DE4DFB /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = ../GoogleMobileAds.framework; sourceTree = "<group>"; };
+		9B71ED961BFD8DF500DE4DFB /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		9B71ED991BFD905900DE4DFB /* ListApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ListApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		9B71ED9A1BFD905A00DE4DFB /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		9B71ED9B1BFD905A00DE4DFB /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		9B71ED9C1BFD905A00DE4DFB /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		9B71ED9D1BFD905A00DE4DFB /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		9B71ED9E1BFD905A00DE4DFB /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		9B71ED9F1BFD905A00DE4DFB /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		9B71EDA01BFD905A00DE4DFB /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		9B71EDA11BFD905A00DE4DFB /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		9B71EDA21BFD905A00DE4DFB /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		9B71EDA71BFDADB700DE4DFB /* menuCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuCustomTableViewCell.swift; sourceTree = "<group>"; };
+		9B71EDA91BFDC0DE00DE4DFB /* AboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		9B71EDAB1BFDC38800DE4DFB /* PrivacyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyVC.swift; sourceTree = "<group>"; };
 		9B8B39161BF9FA7200FDC1E6 /* DataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataHelper.swift; sourceTree = "<group>"; };
 		9B8B39201BFA1FC800FDC1E6 /* ShopList+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShopList+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9B8B39211BFA1FC800FDC1E6 /* ShopList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopList.swift; sourceTree = "<group>"; };
@@ -67,9 +90,8 @@
 		9BB171381BF744DC00FC8104 /* ListAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAppUITests.swift; sourceTree = "<group>"; };
 		9BB1713A1BF744DC00FC8104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BB171571BF7482000FC8104 /* TableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableVC.swift; path = ../TableVC.swift; sourceTree = "<group>"; };
-		F9C7C6B51BFD634D00FCCB5E /* mapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
-		F9C7C6B71BFD64CA00FCCB5E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		F9C7C6BB1BFD67E200FCCB5E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F9BCB1C71C01749500F1675F /* reminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = reminderViewController.swift; path = ../reminderViewController.swift; sourceTree = "<group>"; };
+		F9BCB1C91C01F0E500F1675F /* LocationReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationReminderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9C7C6BC1BFD67E200FCCB5E /* MapKit.framework in Frameworks */,
-				F9C7C6B81BFD64CA00FCCB5E /* CoreLocation.framework in Frameworks */,
+				9B71ED941BFCAD7900DE4DFB /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,13 +141,43 @@
 		9B3453021BF9020C00FCE722 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9B71EDAB1BFDC38800DE4DFB /* PrivacyVC.swift */,
+				9B71EDA91BFDC0DE00DE4DFB /* AboutVC.swift */,
+				9B71EDA71BFDADB700DE4DFB /* menuCustomTableViewCell.swift */,
+				9B71ED961BFD8DF500DE4DFB /* MenuVC.swift */,
 				9BB171151BF744DB00FC8104 /* AppDelegate.swift */,
 				9B3452FE1BF8AC9000FCE722 /* ListDetailVC.swift */,
+				F9BCB1C71C01749500F1675F /* reminderViewController.swift */,
+				F9BCB1C91C01F0E500F1675F /* LocationReminderViewController.swift */,
 				9BB171171BF744DB00FC8104 /* MainVC.swift */,
-				F9C7C6B51BFD634D00FCCB5E /* mapViewController.swift */,
 				9BB171571BF7482000FC8104 /* TableVC.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9B71ED951BFCB3B600DE4DFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B71ED931BFCAD7900DE4DFB /* GoogleMobileAds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B71ED981BFD8F9E00DE4DFB /* MenuView */ = {
+			isa = PBXGroup;
+			children = (
+				9B71ED9A1BFD905A00DE4DFB /* MMDrawerBarButtonItem.h */,
+				9B71ED9B1BFD905A00DE4DFB /* MMDrawerBarButtonItem.m */,
+				9B71ED9C1BFD905A00DE4DFB /* MMDrawerController.h */,
+				9B71ED9D1BFD905A00DE4DFB /* MMDrawerController.m */,
+				9B71ED9E1BFD905A00DE4DFB /* MMDrawerController+Subclass.h */,
+				9B71ED9F1BFD905A00DE4DFB /* MMDrawerVisualState.h */,
+				9B71EDA01BFD905A00DE4DFB /* MMDrawerVisualState.m */,
+				9B71EDA11BFD905A00DE4DFB /* UIViewController+MMDrawerController.h */,
+				9B71EDA21BFD905A00DE4DFB /* UIViewController+MMDrawerController.m */,
+				9B71ED991BFD905900DE4DFB /* ListApp-Bridging-Header.h */,
+			);
+			name = MenuView;
 			sourceTree = "<group>";
 		};
 		9B8B39291BFA2C8100FDC1E6 /* Helper */ = {
@@ -140,8 +191,6 @@
 		9BB171091BF744DB00FC8104 = {
 			isa = PBXGroup;
 			children = (
-				F9C7C6BB1BFD67E200FCCB5E /* MapKit.framework */,
-				F9C7C6B71BFD64CA00FCCB5E /* CoreLocation.framework */,
 				9BB171141BF744DB00FC8104 /* ListApp */,
 				9BB1712C1BF744DC00FC8104 /* ListAppTests */,
 				9BB171371BF744DC00FC8104 /* ListAppUITests */,
@@ -162,6 +211,8 @@
 		9BB171141BF744DB00FC8104 /* ListApp */ = {
 			isa = PBXGroup;
 			children = (
+				9B71ED981BFD8F9E00DE4DFB /* MenuView */,
+				9B71ED951BFCB3B600DE4DFB /* Frameworks */,
 				9B8B39291BFA2C8100FDC1E6 /* Helper */,
 				9B3453021BF9020C00FCE722 /* Controllers */,
 				9B3453011BF8FC1F00FCE722 /* Assets */,
@@ -263,17 +314,13 @@
 		9BB1710A1BF744DB00FC8104 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = BAPAT;
 				TargetAttributes = {
 					9BB171111BF744DB00FC8104 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = 368BS4399Z;
-						SystemCapabilities = {
-							com.apple.Maps.iOS = {
-								enabled = 1;
-							};
-						};
 					};
 					9BB171281BF744DC00FC8104 = {
 						CreatedOnToolsVersion = 7.0;
@@ -340,13 +387,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BB1711E1BF744DB00FC8104 /* ListApp.xcdatamodeld in Sources */,
+				9B71EDA31BFD905A00DE4DFB /* MMDrawerBarButtonItem.m in Sources */,
 				9BB171581BF7482000FC8104 /* TableVC.swift in Sources */,
+				9B71EDA61BFD905A00DE4DFB /* UIViewController+MMDrawerController.m in Sources */,
 				9B8B39241BFA1FC800FDC1E6 /* ShopList+CoreDataProperties.swift in Sources */,
+				F9BCB1CA1C01F0E500F1675F /* LocationReminderViewController.swift in Sources */,
 				9BB171181BF744DB00FC8104 /* MainVC.swift in Sources */,
+				9B71EDA41BFD905A00DE4DFB /* MMDrawerController.m in Sources */,
+				F9BCB1C81C01749500F1675F /* reminderViewController.swift in Sources */,
+				9B71EDAC1BFDC38800DE4DFB /* PrivacyVC.swift in Sources */,
+				9B71EDA51BFD905A00DE4DFB /* MMDrawerVisualState.m in Sources */,
 				9BB171161BF744DB00FC8104 /* AppDelegate.swift in Sources */,
 				9B3452FF1BF8AC9000FCE722 /* ListDetailVC.swift in Sources */,
+				9B71ED971BFD8DF500DE4DFB /* MenuVC.swift in Sources */,
+				9B71EDA81BFDADB700DE4DFB /* menuCustomTableViewCell.swift in Sources */,
 				9B8B39171BF9FA7200FDC1E6 /* DataHelper.swift in Sources */,
-				F9C7C6B61BFD634D00FCCB5E /* mapViewController.swift in Sources */,
+				9B71EDAA1BFDC0DE00DE4DFB /* AboutVC.swift in Sources */,
 				9B8B39271BFA1FC800FDC1E6 /* BuyItems.swift in Sources */,
 				9B8B39251BFA1FC800FDC1E6 /* ShopList.swift in Sources */,
 				9B8B39261BFA1FC800FDC1E6 /* BuyItems+CoreDataProperties.swift in Sources */,
@@ -488,29 +544,59 @@
 		9BB1713E1BF744DC00FC8104 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(inherited)";
 				INFOPLIST_FILE = ListApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleMobileAds.framework/Versions/A",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = SB.ListApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ListApp/ListApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		9BB1713F1BF744DC00FC8104 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(inherited)";
 				INFOPLIST_FILE = ListApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleMobileAds.framework/Versions/A",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = SB.ListApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ListApp/ListApp-Bridging-Header.h";
 			};
 			name = Release;
 		};
 		9BB171411BF744DC00FC8104 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ListAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SB.ListAppTests;
@@ -522,7 +608,12 @@
 		9BB171421BF744DC00FC8104 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ListAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SB.ListAppTests;

@@ -8,8 +8,17 @@
 
 import UIKit
 import CoreData
+import GoogleMobileAds
 
 class TableVC: UITableViewController, NSFetchedResultsControllerDelegate {
+    
+    
+    @IBAction func menuButton(sender: AnyObject) {
+        
+        let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
+    }
+    @IBOutlet weak var admobBanner: GADBannerView!
     
     let context : NSManagedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
 
@@ -21,6 +30,7 @@ class TableVC: UITableViewController, NSFetchedResultsControllerDelegate {
     }
     
     func listFetchRequest() -> NSFetchRequest{
+
         let fetchRequest = NSFetchRequest(entityName: "ShopList")
         
         let sortDescriptor = NSSortDescriptor(key:"listname",ascending:true)
@@ -35,6 +45,16 @@ class TableVC: UITableViewController, NSFetchedResultsControllerDelegate {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        //Display mobile ads here
+        admobBanner.adUnitID = "ca-app-pub-3000953524335319/6882684788"
+        admobBanner.rootViewController = self
+        self.view.addSubview(admobBanner)
+        let adRequest: GADRequest = GADRequest()
+        adRequest.testDevices = [""]
+        admobBanner.loadRequest(adRequest)
+        //self.navigationController?.navigationBarHidden = true;
+        
+        navigationController?.setNavigationBarHidden(navigationController?.navigationBarHidden == true, animated: true)
         
         frc = getFechedResultsController()
         frc.delegate = self
@@ -45,6 +65,14 @@ class TableVC: UITableViewController, NSFetchedResultsControllerDelegate {
             // Handle error stored in *error* here
         }
         
+    }
+    override func viewWillAppear(animated: Bool) {
+       // self.navigationController!.navigationBarHidden = false;
+        //self.navigationController?.setNavigationBarHidden(false, animated: true)
+        navigationController?.setNavigationBarHidden(navigationController?.navigationBarHidden == true, animated: true)
+    }
+    override func viewDidAppear(animated: Bool) {
+        navigationController?.setNavigationBarHidden(navigationController?.navigationBarHidden == true, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -153,6 +181,14 @@ class TableVC: UITableViewController, NSFetchedResultsControllerDelegate {
             
             itemController.nItem = nItem
             
+        }
+        
+    }
+    
+    override func unwindForSegue(unwindSegue: UIStoryboardSegue, towardsViewController subsequentVC: UIViewController) {
+        if unwindSegue.identifier == "back"{
+        
+        navigationController?.setNavigationBarHidden(navigationController?.navigationBarHidden == true, animated: true)
         }
         
     }
