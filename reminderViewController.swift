@@ -16,6 +16,7 @@ class reminderViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        reminderText.text = selectedList
 
         // Do any additional setup after loading the view.
     }
@@ -74,7 +75,6 @@ class reminderViewController: UIViewController {
         }
         
         let reminder = EKReminder(eventStore: eventStore)
-        
         reminder.title = reminderText.text!
         reminder.calendar = eventStore.defaultCalendarForNewReminders()
         let date = myDatePicker.date

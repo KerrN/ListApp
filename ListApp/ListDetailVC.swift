@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 
+var selectedList: String = ""
 
 class ListDetailVC: UIViewController,UITableViewDataSource , UIPickerViewDelegate, NSFetchedResultsControllerDelegate
 {
@@ -67,7 +68,7 @@ class ListDetailVC: UIViewController,UITableViewDataSource , UIPickerViewDelegat
         //Show the category
         detailTitle.text = nItem?.category
         self.title = nItem?.listname
-        
+        selectedList = (nItem?.listname)!
         let shoplistFetchRequest = NSFetchRequest(entityName: "ShopList")
         let primarySortDescriptor = NSSortDescriptor(key: "listname", ascending: true)
         
