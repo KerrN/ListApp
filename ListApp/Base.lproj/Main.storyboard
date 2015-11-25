@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Hr5-N8-REh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Hr5-N8-REh">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
@@ -28,7 +28,7 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DuQ-1q-Q0L" id="Xn5-oG-Vm7">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6J-9A-d9I">
@@ -96,18 +96,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRIVACY POLICY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cl4-pk-nPJ">
-                                <rect key="frame" x="279" y="216" width="132" height="20.5"/>
+                                <rect key="frame" x="279" y="216" width="132" height="21"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="132" id="oK4-RG-AcR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.81176470590000005" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="uBg-He-sjD" firstAttribute="top" secondItem="Cl4-pk-nPJ" secondAttribute="bottom" constant="363" id="1JG-3r-kWp"/>
                             <constraint firstItem="Cl4-pk-nPJ" firstAttribute="leading" secondItem="2cv-a0-8Mt" secondAttribute="leading" constant="279" id="CFk-p3-HR0"/>
@@ -138,7 +138,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexTrackingBackgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="yb8-sc-6Pt" customClass="GADBannerView">
                             <rect key="frame" x="0.0" y="64" width="320" height="45"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -150,11 +152,11 @@
                                 <rect key="frame" x="0.0" y="137" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="biu-sk-vj4" id="YtM-r9-Kub">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ayp-yf-prv">
-                                            <rect key="frame" x="15" y="6" width="31.5" height="19.5"/>
+                                            <rect key="frame" x="15" y="5" width="32" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -162,7 +164,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gdg-Gh-sm2">
-                                            <rect key="frame" x="15" y="25.5" width="40.5" height="13.5"/>
+                                            <rect key="frame" x="15" y="25" width="41" height="14"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
@@ -185,11 +187,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="PANTRY" id="C98-GN-Rt4">
                         <barButtonItem key="leftBarButtonItem" image="Menu" id="TKn-aP-CHJ">
+                            <color key="tintColor" red="1" green="0.81176470590000005" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="menuButton:" destination="F2J-Xc-IV0" id="aTe-jf-byk"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="SYo-i6-F45">
+                            <color key="tintColor" red="1" green="0.81176470590000005" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="BYZ-38-t0r" kind="show" id="oSf-h2-KCo"/>
                             </connections>
@@ -243,13 +247,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhL-rC-Dkh">
-                                <rect key="frame" x="232" y="186" width="62" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhL-rC-Dkh">
+                                <rect key="frame" x="211" y="183" width="105" height="36"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="62" id="NhQ-eE-blX"/>
                                 </constraints>
-                                <state key="normal" title="Add Item"/>
+                                <state key="normal" title="Add Item" image="yellowplus">
+                                    <color key="titleColor" red="1" green="0.81176470588235294" blue="0.015686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="addButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="38E-on-3t7"/>
                                     <action selector="addBuyingItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xyr-3G-8He"/>
@@ -257,7 +263,7 @@
                             </button>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="9Wa-vx-maz" firstAttribute="top" secondItem="cnu-ze-G5W" secondAttribute="bottom" constant="8" symbolic="YES" id="3lN-iJ-H4d"/>
                             <constraint firstAttribute="trailingMargin" secondItem="UhL-rC-Dkh" secondAttribute="trailing" constant="37" id="4Um-8g-gbC"/>
@@ -276,12 +282,14 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Add / Edit List" id="Hu0-Iy-7Xe">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="Ets-9I-Qxr">
+                        <barButtonItem key="leftBarButtonItem" image="ARROWleft" id="Ets-9I-Qxr">
+                            <color key="tintColor" red="1" green="0.81176470590000005" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="cancelTapped:" destination="BYZ-38-t0r" id="xGi-HH-P1R"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Iiw-N7-lxG">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="Iiw-N7-lxG">
+                            <color key="tintColor" red="1" green="0.81176470590000005" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="saveTapped:" destination="BYZ-38-t0r" id="gyL-xE-H2W"/>
                             </connections>
@@ -318,7 +326,7 @@
             </objects>
             <point key="canvasLocation" x="-354" y="387"/>
         </scene>
-        <!--DetailView-->
+        <!--List DetailVC-->
         <scene sceneID="EBg-kc-Nqh">
             <objects>
                 <viewController id="Df4-fb-fFZ" customClass="ListDetailVC" customModule="ListApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -360,7 +368,7 @@
                                         <rect key="frame" x="0.0" y="28" width="289" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" tableViewCell="yfH-o5-90T" id="9Kq-5V-YwT">
-                                            <rect key="frame" x="0.0" y="0.0" width="289" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="289" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter items name " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aL0-XH-8kh">
@@ -410,7 +418,7 @@
                                     <constraint firstAttribute="width" constant="68" id="guM-kB-xra"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.81176470590000005" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaQ-ZC-DLG">
@@ -420,12 +428,12 @@
                                     <constraint firstAttribute="width" constant="227" id="oHb-cQ-ZXw"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.81176470590000005" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="B81-6Z-anQ" firstAttribute="top" secondItem="GRf-F5-oth" secondAttribute="bottom" constant="22" id="3xD-yw-WHH"/>
                             <constraint firstItem="Vaf-YM-IXf" firstAttribute="bottom" secondItem="JnV-5J-Uz4" secondAttribute="top" id="4TA-NP-Tg4"/>
@@ -447,20 +455,22 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="DetailView" id="UBm-Ua-I2f">
+                    <navigationItem key="navigationItem" id="UBm-Ua-I2f">
                         <barButtonItem key="leftBarButtonItem" systemItem="done" id="vxX-3g-Ajc">
+                            <color key="tintColor" red="1" green="0.81176470590000005" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="cancleDetailView:" destination="Df4-fb-fFZ" id="FFw-QM-N93"/>
                             </connections>
                         </barButtonItem>
                         <rightBarButtonItems>
-                            <barButtonItem title="Add Reminder" id="Gt1-tD-miA">
+                            <barButtonItem image="Bell" id="Gt1-tD-miA">
+                                <color key="tintColor" red="1" green="0.81176470590000005" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="CG3-RV-l4a" kind="show" identifier="showReminder" id="uNz-9g-Tf0"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="Location Reminder" id="jsJ-ZW-cGo">
-                                <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <barButtonItem image="GPS_symbol" id="jsJ-ZW-cGo">
+                                <color key="tintColor" red="1" green="0.81176470590000005" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="I9i-Kt-Lah" kind="show" identifier="showLocationReminder" id="YZf-b5-rJN"/>
                                 </connections>
@@ -495,6 +505,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="197" id="caT-Jz-ouk"/>
                                 </constraints>
+                                <color key="textColor" red="1" green="0.81176470590000005" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -503,13 +514,15 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="122" id="OxM-nv-Pvq"/>
                                 </constraints>
-                                <state key="normal" title="When I leave here"/>
+                                <state key="normal" title="When I leave here">
+                                    <color key="titleColor" red="1" green="0.81176470590000005" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="setLocationReminder:" destination="I9i-Kt-Lah" eventType="touchUpInside" id="N03-EN-EWo"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="xmL-tp-g5u" firstAttribute="top" secondItem="0zZ-LE-QaE" secondAttribute="bottom" constant="63" id="IZO-hW-kNf"/>
                             <constraint firstItem="0zZ-LE-QaE" firstAttribute="top" secondItem="xe4-IB-Iv8" secondAttribute="bottom" constant="64" id="ZwB-qz-Hd6"/>
@@ -559,13 +572,15 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="181" id="mnl-DT-QVx"/>
                                 </constraints>
-                                <state key="normal" title="Set Reminder"/>
+                                <state key="normal" title="Set Reminder">
+                                    <color key="titleColor" red="1" green="0.81176470590000005" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="setReminder:" destination="CG3-RV-l4a" eventType="touchUpInside" id="dcq-gU-h4R"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="87l-Ne-ZNc" firstAttribute="top" secondItem="Ul7-wl-tiQ" secondAttribute="bottom" constant="26" id="9Yj-eL-lZw"/>
                             <constraint firstItem="cNC-F2-zVJ" firstAttribute="top" secondItem="RwI-5m-d9q" secondAttribute="bottom" constant="32" id="Nhi-Y8-j0T"/>
@@ -601,12 +616,12 @@
                                     <constraint firstAttribute="width" constant="47" id="sev-mR-Gq7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.81176470590000005" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="VL5-2Y-QR3" firstAttribute="top" secondItem="iq2-Mj-LfO" secondAttribute="bottom" constant="363" id="2lk-TJ-oaP"/>
                             <constraint firstItem="iq2-Mj-LfO" firstAttribute="leading" secondItem="tcx-x2-l48" secondAttribute="leading" constant="279" id="NB8-IC-vzo"/>
@@ -615,7 +630,8 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="About" id="3VM-Gg-lz6">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="v1W-uB-zeO">
+                        <barButtonItem key="leftBarButtonItem" image="ARROWleft" id="v1W-uB-zeO">
+                            <color key="tintColor" red="1" green="0.81176470590000005" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="cancelTapped:" destination="FET-zK-mDc" id="tKt-xA-Ymk"/>
                                 <segue destination="F2J-Xc-IV0" kind="show" id="0VZ-Zs-abS"/>
@@ -631,8 +647,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Menu" width="30" height="25"/>
+        <image name="ARROWleft" width="21" height="23"/>
+        <image name="Bell" width="53" height="28"/>
+        <image name="GPS_symbol" width="53" height="28"/>
+        <image name="Menu" width="20" height="16"/>
         <image name="Tick" width="92" height="48"/>
+        <image name="yellowplus" width="32" height="36"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="0VZ-Zs-abS"/>

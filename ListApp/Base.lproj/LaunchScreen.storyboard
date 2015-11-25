@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,27 +16,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchImage" translatesAutoresizingMaskIntoConstraints="NO" id="zIJ-NI-MPx">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="splash screen " translatesAutoresizingMaskIntoConstraints="NO" id="sUO-RQ-Oqn">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="sXO-lS-vpM"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="zIJ-NI-MPx" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="3Ev-VI-M7k"/>
-                            <constraint firstItem="zIJ-NI-MPx" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="Krt-Aq-bGE"/>
-                            <constraint firstItem="zIJ-NI-MPx" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="M1d-to-5x2"/>
-                            <constraint firstAttribute="trailing" secondItem="zIJ-NI-MPx" secondAttribute="trailing" id="vvK-mL-7fH"/>
+                            <constraint firstAttribute="bottom" secondItem="sUO-RQ-Oqn" secondAttribute="bottom" id="3Eg-lF-iPf"/>
+                            <constraint firstItem="sUO-RQ-Oqn" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="4ge-Il-ziD"/>
+                            <constraint firstItem="sUO-RQ-Oqn" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="AiB-wn-Saw"/>
+                            <constraint firstAttribute="bottom" secondItem="sUO-RQ-Oqn" secondAttribute="bottom" id="IeS-8a-mwe"/>
+                            <constraint firstItem="sUO-RQ-Oqn" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="To8-Rg-PkY"/>
+                            <constraint firstAttribute="trailing" secondItem="sUO-RQ-Oqn" secondAttribute="trailing" id="Wdm-8c-DsK"/>
+                            <constraint firstAttribute="trailing" secondItem="sUO-RQ-Oqn" secondAttribute="trailing" id="Y6k-rZ-DPn"/>
+                            <constraint firstItem="sUO-RQ-Oqn" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="xy7-gP-hdG"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="189" y="309"/>
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchImage" width="363" height="645"/>
+        <image name="splash screen " width="1080" height="1920"/>
     </resources>
 </document>

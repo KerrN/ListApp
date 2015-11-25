@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 
 class MainVC: UIViewController {
+
     
     let context = (UIApplication.sharedApplication().delegate as! AppDelegate ).managedObjectContext
     
