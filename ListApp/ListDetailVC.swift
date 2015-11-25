@@ -60,7 +60,7 @@ class ListDetailVC: UIViewController,UITableViewDataSource , UIPickerViewDelegat
         } catch _ {
             // Handle error stored in *error* here
         }
-*/
+        */
 
     }
     
@@ -181,9 +181,16 @@ class ListDetailVC: UIViewController,UITableViewDataSource , UIPickerViewDelegat
         let completed = buyingItem.valueForKey("completed") as! Bool?
         if completed == false{
             cell.textLabel!.text = cell.textLabel!.text!
+            cell.accessoryType = .None
+            
         }else {// check is true
-            cell.textLabel!.text = "\u{2705}" + cell.textLabel!.text!
+            cell.textLabel!.text = /* "\u{2705}" + */  cell.textLabel!.text!
+             cell.accessoryType = .Checkmark
+            let img = UIImageView(frame: CGRect(x: 0, y: 0, width: 80, height: 80))
+            img.image = UIImage(named: "Tick.png")
+            cell.accessoryView = img
         }
+        
         return cell
     }
     
@@ -228,13 +235,18 @@ class ListDetailVC: UIViewController,UITableViewDataSource , UIPickerViewDelegat
             
             if  completed == false
             {
-                cell.textLabel!.text =   "\u{2705}" + cell.textLabel!.text!
+                cell.textLabel!.text =   cell.textLabel!.text!
+                cell.accessoryType = .None
                 buyingItem.setValue(true, forKey: "completed")
                 print (buyingItem.valueForKey("completed"))
             }
             else
             {
-                cell.accessoryType = .None
+                cell.accessoryType = .Checkmark
+                let img = UIImageView(frame: CGRect(x: 0, y: 0, width: 80, height: 80))
+                img.image = UIImage(named: "Tick.png")
+                cell.accessoryView = img
+                
                 buyingItem.setValue(false, forKey: "completed")
                 print (buyingItem.valueForKey("completed"))
             }

@@ -16,7 +16,7 @@ class MainVC: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource {
     let context = (UIApplication.sharedApplication().delegate as! AppDelegate ).managedObjectContext
     
     var nItem : ShopList? = nil
-    var Array = ["All","Personal","Work","To do Reminders"]
+    var Array = ["All","Personal","Work","Today's Reminders"]
     var CategorySelected = 0
     
     @IBOutlet weak var categoryPicker: UIPickerView!
