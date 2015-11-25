@@ -9,7 +9,9 @@
 import UIKit
 import CoreData
 
+
 class MainVC: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource {
+
     
     let context = (UIApplication.sharedApplication().delegate as! AppDelegate ).managedObjectContext
     
