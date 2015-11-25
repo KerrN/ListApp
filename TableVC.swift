@@ -83,8 +83,8 @@ class TableVC: UITableViewController, NSFetchedResultsControllerDelegate {
         
     }
     override func viewWillAppear(animated: Bool) {
-       // self.navigationController!.navigationBarHidden = false;
-        //self.navigationController?.setNavigationBarHidden(false, animated: true)
+        self.navigationController!.navigationBarHidden = false;
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
         navigationController?.setNavigationBarHidden(navigationController?.navigationBarHidden == true, animated: true)
         frc = getFechedResultsController()
         frc.delegate = self

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Hr5-N8-REh">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
@@ -95,7 +96,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRIVACY POLICY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cl4-pk-nPJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="PRIVACY POLICY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cl4-pk-nPJ">
                                 <rect key="frame" x="279" y="216" width="132" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -114,7 +115,8 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="PRIVACY POLICY" id="7nP-rr-fnV">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="bDR-dw-afQ">
+                        <barButtonItem key="leftBarButtonItem" image="ARROWleft" id="bDR-dw-afQ">
+                            <color key="tintColor" red="1" green="0.81176470590000005" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="cancelTapped:" destination="w8H-jn-Eci" id="pnA-uX-B1v"/>
                                 <segue destination="F2J-Xc-IV0" kind="show" identifier="backPrivacy" id="Voo-Tt-B5P"/>
@@ -242,7 +244,6 @@
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2BI-hw-neM">
                                 <rect key="frame" x="0.0" y="186" width="320" height="216"/>
                                 <animations/>
-
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="IXG-be-xPd"/>
                                 </connections>
@@ -321,24 +322,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter to buy item" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GRf-F5-oth">
-                                <rect key="frame" x="16" y="72" width="196" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter to buy item" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GRf-F5-oth">
+                                <rect key="frame" x="11" y="83" width="196" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PbS-J3-GyZ">
-                                <rect key="frame" x="218" y="71" width="85" height="30"/>
-                                <animations/>
-                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="85" id="UOC-eN-OX9"/>
-                                </constraints>
-                                <state key="normal" title="Add Item"/>
-                                <connections>
-                                    <action selector="addButton_Click:" destination="Df4-fb-fFZ" eventType="touchUpInside" id="X0U-gU-DP3"/>
-                                </connections>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vp2-LG-FEi">
                                 <rect key="frame" x="14" y="167" width="289" height="343"/>
                                 <animations/>
@@ -360,6 +349,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="183" id="DbP-g3-vH0"/>
                                                     </constraints>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -382,6 +372,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -409,6 +400,24 @@
                                 <color key="textColor" red="1" green="0.81176470590000005" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PbS-J3-GyZ">
+                                <rect key="frame" x="215" y="66" width="105" height="64"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="1i7-M6-3Px"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="CDB-ai-61U"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="CaL-7s-n2B"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="70" id="RVM-Uq-Fox"/>
+                                    <constraint firstAttribute="width" constant="85" id="UOC-eN-OX9"/>
+                                </constraints>
+                                <state key="normal" image="yellowplus">
+                                    <color key="titleShadowColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addButton_Click:" destination="Df4-fb-fFZ" eventType="touchUpInside" id="X0U-gU-DP3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -417,7 +426,7 @@
                             <constraint firstItem="B81-6Z-anQ" firstAttribute="leading" secondItem="OsD-GI-kj1" secondAttribute="leadingMargin" id="79T-At-Wl4"/>
                             <constraint firstItem="vp2-LG-FEi" firstAttribute="top" secondItem="B81-6Z-anQ" secondAttribute="bottom" constant="25" id="GGZ-dN-PfS"/>
                             <constraint firstItem="vp2-LG-FEi" firstAttribute="leading" secondItem="OsD-GI-kj1" secondAttribute="leadingMargin" constant="-2" id="Njf-SF-bha"/>
-                            <constraint firstItem="PbS-J3-GyZ" firstAttribute="baseline" secondItem="GRf-F5-oth" secondAttribute="baseline" id="UWa-BI-9nM"/>
+                            <constraint firstItem="PbS-J3-GyZ" firstAttribute="top" secondItem="GRf-F5-oth" secondAttribute="baseline" id="UWa-BI-9nM"/>
                             <constraint firstItem="vp2-LG-FEi" firstAttribute="trailing" secondItem="PbS-J3-GyZ" secondAttribute="trailing" id="avz-6b-lrh"/>
                             <constraint firstItem="oaQ-ZC-DLG" firstAttribute="leading" secondItem="B81-6Z-anQ" secondAttribute="trailing" constant="18" id="er7-9V-8jC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="PbS-J3-GyZ" secondAttribute="trailing" constant="1" id="geJ-2u-alb"/>

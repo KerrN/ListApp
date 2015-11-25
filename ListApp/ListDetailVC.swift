@@ -49,6 +49,7 @@ class ListDetailVC: UIViewController,UITableViewDataSource , UIPickerViewDelegat
         super.viewDidLoad()
         self.canDisplayBannerAds = true
 
+        /*
         frc = getFechedResultsController()
         frc.delegate = self
         
@@ -59,6 +60,7 @@ class ListDetailVC: UIViewController,UITableViewDataSource , UIPickerViewDelegat
         } catch _ {
             // Handle error stored in *error* here
         }
+*/
 
     }
     
