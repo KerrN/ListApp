@@ -13,6 +13,7 @@ var selectedList: String = ""
 
 class ListDetailVC: UIViewController,UITableViewDataSource , UIPickerViewDelegate, NSFetchedResultsControllerDelegate
 {
+    @IBOutlet weak var hjhj: UIButton!
  
     let context : NSManagedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     var frc: NSFetchedResultsController = NSFetchedResultsController()
@@ -48,6 +49,8 @@ class ListDetailVC: UIViewController,UITableViewDataSource , UIPickerViewDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         self.canDisplayBannerAds = true
+        
+        hjhj.contentMode = .ScaleAspectFit
 
         /*
         frc = getFechedResultsController()
