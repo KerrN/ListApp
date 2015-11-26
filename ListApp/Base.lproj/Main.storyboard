@@ -435,7 +435,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="UBm-Ua-I2f">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="vxX-3g-Ajc">
+                        <barButtonItem key="leftBarButtonItem" image="ARROWleft" id="vxX-3g-Ajc">
                             <color key="tintColor" red="1" green="0.81176470590000005" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="cancleDetailView:" destination="Df4-fb-fFZ" id="FFw-QM-N93"/>
@@ -645,6 +645,6 @@
         <image name="yellowplus" width="32" height="36"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Voo-Tt-B5P"/>
+        <segue reference="Afe-e8-9Je"/>
     </inferredMetricsTieBreakers>
 </document>
