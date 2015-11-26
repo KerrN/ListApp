@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		902A00C81C069CB40040FFC5 /* Geotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902A00C71C069CB40040FFC5 /* Geotification.swift */; };
+		902EE1EF1C057CA500CEC8EE /* StoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902EE1EE1C057CA500CEC8EE /* StoreController.swift */; };
 		9B3452FF1BF8AC9000FCE722 /* ListDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3452FE1BF8AC9000FCE722 /* ListDetailVC.swift */; };
 		9B71ED941BFCAD7900DE4DFB /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B71ED931BFCAD7900DE4DFB /* GoogleMobileAds.framework */; };
 		9B71ED971BFD8DF500DE4DFB /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B71ED961BFD8DF500DE4DFB /* MenuVC.swift */; };
@@ -53,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		902A00C71C069CB40040FFC5 /* Geotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Geotification.swift; path = ../Geotification.swift; sourceTree = "<group>"; };
+		902EE1EE1C057CA500CEC8EE /* StoreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreController.swift; sourceTree = "<group>"; };
 		9B3452FE1BF8AC9000FCE722 /* ListDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDetailVC.swift; sourceTree = "<group>"; };
 		9B71ED931BFCAD7900DE4DFB /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = ../GoogleMobileAds.framework; sourceTree = "<group>"; };
 		9B71ED961BFD8DF500DE4DFB /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
@@ -141,6 +145,8 @@
 		9B3453021BF9020C00FCE722 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				902A00C71C069CB40040FFC5 /* Geotification.swift */,
+				902EE1EE1C057CA500CEC8EE /* StoreController.swift */,
 				9B71EDAB1BFDC38800DE4DFB /* PrivacyVC.swift */,
 				9B71EDA91BFDC0DE00DE4DFB /* AboutVC.swift */,
 				9B71EDA71BFDADB700DE4DFB /* menuCustomTableViewCell.swift */,
@@ -399,6 +405,7 @@
 				9B71EDA51BFD905A00DE4DFB /* MMDrawerVisualState.m in Sources */,
 				9BB171161BF744DB00FC8104 /* AppDelegate.swift in Sources */,
 				9B3452FF1BF8AC9000FCE722 /* ListDetailVC.swift in Sources */,
+				902EE1EF1C057CA500CEC8EE /* StoreController.swift in Sources */,
 				9B71ED971BFD8DF500DE4DFB /* MenuVC.swift in Sources */,
 				9B71EDA81BFDADB700DE4DFB /* menuCustomTableViewCell.swift in Sources */,
 				9B8B39171BF9FA7200FDC1E6 /* DataHelper.swift in Sources */,
@@ -406,6 +413,7 @@
 				9B8B39271BFA1FC800FDC1E6 /* BuyItems.swift in Sources */,
 				9B8B39251BFA1FC800FDC1E6 /* ShopList.swift in Sources */,
 				9B8B39261BFA1FC800FDC1E6 /* BuyItems+CoreDataProperties.swift in Sources */,
+				902A00C81C069CB40040FFC5 /* Geotification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

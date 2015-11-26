@@ -1,4 +1,4 @@
-//
+///Users/040916399/Documents/listAppClone/ListApp/ListApp
 //  ListDetailVC.swift
 //  ToDoListApp
 //
@@ -20,6 +20,8 @@ class ListDetailVC: UIViewController,UITableViewDataSource , UIPickerViewDelegat
     
     var nItem : ShopList? = nil
 
+   
+    @IBOutlet weak var addItem: UIButton!
     @IBOutlet weak var detailCancle: UIBarButtonItem!
     @IBOutlet weak var detailTitle: UILabel!
     @IBOutlet var txtItem: UITextField!
@@ -47,16 +49,16 @@ class ListDetailVC: UIViewController,UITableViewDataSource , UIPickerViewDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        frc = getFechedResultsController()
-        frc.delegate = self
+        //frc = getFechedResultsController()
+        //frc.delegate = self
         
-        do {
+        //do {
             
-            try frc.performFetch()
+         //   try frc.performFetch()
         
-        } catch _ {
+       // } catch _ {
             // Handle error stored in *error* here
-        }
+        //}
 
     }
     
