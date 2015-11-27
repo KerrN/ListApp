@@ -11,12 +11,17 @@ import iAd
 
 class reminderViewController: UIViewController {
 
+    //Declairation of variables for UI component
     @IBOutlet var reminderText: UITextField!
     @IBOutlet var myDatePicker: UIDatePicker!
+    
+    //For store a reference to the application delegate
     var appDelegate: AppDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Get selected list name from previous view and put it in the textField.
         reminderText.text = selectedList
         self.canDisplayBannerAds = true
 
@@ -25,16 +30,12 @@ class reminderViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
+   // The action of click "Set reminder", verifies that access to the event store has not already been obtained and, in the event that it has not, requests access to the reminder calendars. If access is denied a message is reported to the console. If access is granted, a second method named createReminder is called.
     @IBAction func setReminder(sender: AnyObject) {
-        
+        // Declair a instance of AppDelegate
         appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate
-        
-        
-        
         
         if appDelegate!.eventStore == nil {
             appDelegate!.eventStore = EKEventStore()
@@ -65,7 +66,7 @@ class reminderViewController: UIViewController {
         
     }
     
-    
+    // Create a defaut reminder and a alarm added, save to eventStore.
     func createReminder() throws {
         
         guard let eventStore = appDelegate?.eventStore else {
